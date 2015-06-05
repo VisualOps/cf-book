@@ -1,0 +1,96 @@
+# Resource relation
+This relation can be used when write rule resource order like vpc.instance or connected function like vpc.connected(resource=["instance"])
+
+- region
+	- vpc
+	- acl
+	- rtb
+	- subnet
+	- instance
+	- eni
+	- sg
+	- eip
+	- vol
+	- igw
+	- elb
+	- asg
+	- lc
+	- dbinstance
+	- dbsubnetgroup
+
+- vpc
+	- acl
+	- rtb
+	- subnet
+	- instance
+	- eni
+	- sg
+	- igw
+	- elb
+	- dbsubnetgroup
+- acl
+	- vpc
+	- subnet
+- rtb
+	- vpc
+	- subnet
+- subnet
+    - vpc
+    - instance
+    - eni
+    - acl
+    - rtb
+    - asg
+    - dbsubnetgroup
+    - elb
+- instance
+    - vpc
+    - subnet
+    - eni
+    - vol
+    - sg
+    - eip
+    - elb
+    - asg
+- eni:[
+    - vpc
+    - subnet
+    - instance
+    - sg
+    - eip
+
+- sg
+    - vpc
+    - instance
+    - eni
+    - elb
+    - dbinstance
+
+- eip
+    - instance
+    - eni
+- vol
+    - instance
+- igw
+    - vpc
+- elb
+    - vpc
+    - instance
+    - subnet
+    - sg
+    - asg
+- asg
+    - lc
+    - instance
+    - elb
+    - subnet
+- lc
+    - asg
+    - sg
+- dbinstance
+    - dbsubnetgroup
+    - sg
+- dbsubnetgroup
+    - dbinstance
+    - vpc
+    - subnet
