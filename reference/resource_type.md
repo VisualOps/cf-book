@@ -1,5 +1,5 @@
 # Resource
-We support 19 AWS resources.
+We support 19 AWS resources. Each of them has corresponding [attributes](./resource_attributes.md)
 
 - region
 - vpc
