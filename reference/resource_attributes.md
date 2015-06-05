@@ -1,7 +1,7 @@
 # Resource attributes
 The attributes we support are the same as [AWS](http://aws.amazon.com/documentation/). As different sdk have different attribute name, we use AWS api return xml as standard attribute.
 
-####For exmaple
+####For exmaple: eip
 ![](https://raw.githubusercontent.com/VisualOps/cf-book/master/images/resource_attributes_eip.png)
 
 Here is the attribtues list from AWS.
@@ -201,3 +201,73 @@ Here is the attribtues list from AWS.
 	- tagSet
 	- vpcId
 	- regionName
+
+- ##eip
+	
+	- instanceId
+	- publicIp
+	- allocationId
+	- domain
+	- networkInterfaceId
+	- networkInterfaceOwnerId
+	- privateIpAddress
+	- regionName
+
+- ##vol
+	- attachmentSet
+		- status
+		- attachTime
+		- instanceId
+		- volumeId
+		- deleteOnTermination
+		- device
+	- avaliabilityZone
+	- createTime
+	- encrypted
+	- kmsKeyId
+	- size
+	- snapshotId
+	- state
+	- volumeId
+	- iops
+	- tagSet
+	- volumeType
+	- regionName
+
+- ##igw
+	- attachmentSet
+		- vpcId
+		- state
+	- internetGatewayId
+	- tagSet
+	- regionName
+
+- ##vgw
+	- availabilityZone
+	- state
+	- type
+	- attachments
+		- vpcId
+		- state
+	- vpnGatewayId
+	- tagSet
+	- regionName
+
+- ##vpn
+	- customerGatewayId
+	- state
+	- type
+	- vpnConnectionId
+	- vpnGatewayId
+	- options
+		- staticRoutesOnly
+	- routes
+		- destinationCidrBlock
+		- state
+	- tagSet
+	- vgwTelemetry
+		- status
+		- acceptedRouteCount
+		- outsideIpAddress
+		- lastStatusChange
+		- statusMessage
