@@ -228,7 +228,7 @@ Here is the attribtues list from AWS. Different level attribute can be join by "
 	- kmsKeyId
 	- size
 	- snapshotId
-	- state
+	- status
 	- volumeId
 	- iops
 	- tagSet
