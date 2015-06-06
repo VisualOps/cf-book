@@ -4,7 +4,7 @@ The attributes we support are the same as [AWS](http://aws.amazon.com/documentat
 ####For exmaple: eip
 ![](https://raw.githubusercontent.com/VisualOps/cf-book/master/images/resource_attributes_eip.png)
 
-Here is the attribtues list from AWS.
+Here is the attribtues list from AWS. Different level attribute can be join by ".", such as acl(assocaitionSet.subnetId = "subnet-12345678")
 
 - ## region
 	- regionName
@@ -183,7 +183,7 @@ Here is the attribtues list from AWS.
 	- regionName
 
 - ##sg
-	- description
+	- groupDescription
 	- groupName
 	- ipPermissions
 		- toPort
@@ -208,6 +208,7 @@ Here is the attribtues list from AWS.
 	- publicIp
 	- allocationId
 	- domain
+	- associationId
 	- networkInterfaceId
 	- networkInterfaceOwnerId
 	- privateIpAddress
@@ -271,3 +272,189 @@ Here is the attribtues list from AWS.
 		- outsideIpAddress
 		- lastStatusChange
 		- statusMessage
+	- regionName
+
+- ##cgw
+	- ipAddress
+	- bgpAsn
+	- customerGatewayId
+	- state
+	- type
+	- tagSet
+	- regionName
+
+
+- ##elb
+	- AvailabilityZones
+	- BackendServerDescriptions
+	- CanonicalHostedZoneName
+	- CanonicalHostedZoneNameID
+	- CreatedTime
+	- DNSName
+	- HealthCheck
+		- HealthyThreshold
+		- Interval
+		- Target
+		- Timeout
+		- UnhealthyThreshold
+	- Instances
+		- InstanceId
+	- ListenerDescriptions
+		- Listener
+			- InstancePort
+			- LoadBalancerPort
+			- Protocol
+			- InstanceProtocol
+			- SSLCertificateId
+		- PolicyNames
+			- member
+
+	- LoadBalancerName
+	- Policies
+		- LBCookieStickinessPolicies
+		- AppCookieStickinessPolicies
+		- OtherPolicies
+			- member
+	- Scheme
+	- SecurityGroups
+		- member
+	- SourceSecurityGroup
+		- GroupName
+		- OwnerAlias
+	- Subnets
+	- VPCId
+	- regionName
+
+- ## asg
+	- AutoScalingGroupARN
+	- AutoScalingGroupName
+	- AvailabilityZones
+	- CreatedTime
+	- DefaultCooldown
+	- DesiredCapacity
+	- EnabledMetrics
+	- HealthCheckGracePeriod
+	- HealthCheckType
+	- Instances
+		- InstanceId
+		- AvailabilityZone
+		- HealthStatus
+		- LifecycleState
+		- LaunchConfigurationName
+	- MaxSize
+	- LaunchConfigurationName
+	- LoadBalancerNames
+	- MinSize
+	- PlacementGroup
+	- Status
+	- SuspendedProcesses
+	- Tags
+	- TerminationPolicies
+	- VPCZoneIdentifier
+	- regionName
+
+- ## lc
+	- AssociatePublicIpAddress
+	- BlockDeviceMappings
+		- DeviceName
+		- Ebs
+			- SnapshotId
+			- VolumeSize
+			- VolumeType
+	- ClassicLinkVPCId
+	- ClassicLinkVPCSecurityGroups
+	- CreatedTime
+	- EbsOptimized
+	- IamInstanceProfile
+	- ImageId
+	- InstanceMonitoring
+		- Enabled
+	- InstanceType
+	- KernelId
+	- KeyName
+	- LaunchConfigurationARN
+	- LaunchConfigurationName
+	- PlacementTenancy
+	- RamdiskId
+	- SecurityGroups
+		- member
+	- SpotPrice
+	- UserData
+	- regionName
+
+- ## dbinstance
+	- AllocatedStorage
+	- AutoMinorVersionUpgrade
+	- AvailabilityZone
+	- BackupRetentionPeriod
+	- CACertificateIdentifier
+	- CharacterSetName
+	- DBInstanceClass
+	- DBInstanceIdentifier
+	- DBInstanceStatus
+	- DBName
+	- DBParameterGroups
+		- DBParameterGroup
+			- DBParameterGroupName
+			- ParameterApplyStatus
+	- DBSecurityGroups
+	- DBSubnetGroup
+		- Subnets
+			- Subnet
+				- SubnetStatus
+				- SubnetIdentifier
+				- SubnetAvailabilityZone
+					- Name
+					- ProvisionedIopsCapable
+		- DBSubnetGroupName
+		- VpcId
+		- DBSubnetGroupDescription
+		- SubnetGroupStatus
+
+	- DbiResourceId
+	- Endpoint
+		- Port
+		- Address
+	- Engine
+	- EngineVersion
+	- InstanceCreateTime
+	- Iops
+	- KmsKeyId
+	- LatestRestorableTime
+	- LicenseModel
+	- MasterUsername
+	- MultiAZ
+	- OptionGroupMemberships
+		- OptionGroupMembership
+			- Status
+			- OptionGroupName
+	- PendingModifiedValues
+	- PreferredBackupWindow
+	- PreferredMaintenanceWindow
+	- PublicyAccessible
+	- ReadReplicaDBInstanceIdentifier
+	- ReadReplicaSourceDBInstanceIdentifier
+	- SecondaryAvailabilityZone
+	- StatusInfos
+	- StorageEncrypted
+	- StorageType
+	- TdeCredentialArn
+	- VpcSecurityGroups
+		- Status
+		- VpcSecurityGroupId
+	- regionName
+
+
+- ## dbsubnetgroup
+	- DBSubnetGroupDescription
+	- DBSubnetGroupName
+	- SubnetGroupStatus
+	- Subnets
+		- Subnet
+			- SubnetStatus
+			- SubnetIdentifier
+			- SubnetAvailabilityZone
+				- Name
+				- ProvisionedIopsCapable
+	- VpcId
+	- regionName
