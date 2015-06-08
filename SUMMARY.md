@@ -17,3 +17,4 @@
 	* [Resource function](reference/internal_function.md)
 	* [Parameter](reference/parameter.md)
 	* [Operator](reference/operator.md)
+	* [Example](reference/rule_example.md)
