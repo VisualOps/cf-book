@@ -6,7 +6,7 @@
 - **Instant alert in case of any violation**
 
 Download other formats:
-- [PDF](http://www.gitbook.io/download/pdf/book/gnep/visualops?lang=)
-- [ePub](http://www.gitbook.io/download/epub/book/gnep/visualops?lang=)
-- [Mobi](http://www.gitbook.io/download/mobi/book/gnep/visualops?lang=)
-- [Github](http://github.com/VisualOps/book)
+- [PDF](http://www.gitbook.io/download/pdf/book/gnep/cloudfielder?lang=)
+- [ePub](http://www.gitbook.io/download/epub/book/gnep/cloudfielder?lang=)
+- [Mobi](http://www.gitbook.io/download/mobi/book/gnep/cloudfielder?lang=)
+- [Github](http://github.com/VisualOps/cf-book)
