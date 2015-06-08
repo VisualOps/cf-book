@@ -1,10 +1,30 @@
 # Resource attributes
 The attributes we support are the same as [AWS](http://aws.amazon.com/documentation/). As different sdk have different attribute name, we use AWS api return xml as standard attribute.
 
-####For exmaple: eip
+####For exmaple: [eip](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAddresses.html)
 ![](https://raw.githubusercontent.com/VisualOps/cf-book/master/images/resource_attributes_eip.png)
 
-Here is the attribtues list from AWS. Different level attribute can be joined by ".", such as acl(assocaitionSet.subnetId = "subnet-12345678")
+####Different level attribute
+	
+	acl(assocaitionSet.subnetId = "subnet-12345678")
+
+	or
+
+	acl(assocaitionSet["subnetId"] = "subnet-12345678")
+
+####Multiple attributes
+
+	acl(associationSet.subnetId = "subnet-12345678", tagSet["Name"] = "public")
+
+####Multiple attributes at second level
+	
+	# find acl that one association that contain subnet-12345678 and acl-12345678
+	acl(associationSet = {"subnetId": "subnet-12345678", "networkAclId":"acl-12345678"})
+	
+	!=
+	
+	# find acl that all associations contain subnet-12345678 and acl-12345678
+	acl(associationSet.subnetId = "subnet-12345678", associationSet.networkAclId=acl-12345678"})
 
 - ## region
 	- regionName

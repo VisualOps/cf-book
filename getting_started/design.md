@@ -1,6 +1,6 @@
 # Design the rule
 
-1. First log in to the [IDE](https://ide.cloudfielder.com/)
+1. First login to the [IDE](https://ide.cloudfielder.com/)
 
 2. Create a new rule by clicking 'Create' on rule tab, then we will create an untitled rule for you.<br /><br />
 ![](https://raw.githubusercontent.com/VisualOps/cf-book/master/images/create_rule.png)
