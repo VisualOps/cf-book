@@ -43,7 +43,7 @@ The next step is to enter your AWS account credentials in order for CloudFielder
 
 You will be promped on your first connection to [CloudFielder IDE](https://ide.CloudFielder.com/). If not, or if you wish to update your credentials, login to [CloudFielder IDE](https://ide.CloudFielder.com/login/), then click on your username on the top-right corner
 
-=> "Settings" => "AWS Credential" => "Update".
+=> "Configuration" => "SCAN CONFIGURATION" => "Cloud Account".
 
 ![](https://raw.githubusercontent.com/VisualOps/cf-book/master/images/account_config.png)
 
