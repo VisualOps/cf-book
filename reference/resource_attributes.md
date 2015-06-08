@@ -4,7 +4,7 @@ The attributes we support are the same as [AWS](http://aws.amazon.com/documentat
 ####For exmaple: eip
 ![](https://raw.githubusercontent.com/VisualOps/cf-book/master/images/resource_attributes_eip.png)
 
-Here is the attribtues list from AWS. Different level attribute can be join by ".", such as acl(assocaitionSet.subnetId = "subnet-12345678")
+Here is the attribtues list from AWS. Different level attribute can be joined by ".", such as acl(assocaitionSet.subnetId = "subnet-12345678")
 
 - ## region
 	- regionName
