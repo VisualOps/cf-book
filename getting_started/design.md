@@ -11,7 +11,7 @@
 4. Parameter can be reference within condition 'if'. Parameter value can be string, dict and list.<br /><br />
 ![](https://raw.githubusercontent.com/VisualOps/cf-book/master/images/rule_param.png)
 
-5. In 'if' section, user can write the expression to represent how to filter there resource. Now we support 19 resources and a set of operator. Please check the [reference](http://docs.cloudfielder.com)<br /><br />
+5. In 'if' section, user can write the expression to represent how to filter there resource. Now we support 19 resources and a set of operator. Please check the [reference](../reference/README.md)<br /><br />
 ![](https://raw.githubusercontent.com/VisualOps/cf-book/master/images/rule_if.png)
 
 6. Finally, if we found any violation, we will notify user using method in 'do' section. Now we only support email().
