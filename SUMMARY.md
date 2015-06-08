@@ -6,7 +6,7 @@
 	* [Rule](getting_started/rule.md)
 	* [Setup](getting_started/setup.md)
 		* [Amazon Web Services](getting_started/amazon_web_services.md)
-	* [Create your first rule](getting_started/create_your_firist_rule.md)
+	* [Create your first rule](getting_started/create_your_first_rule.md)
 		* [Design](getting_started/design.md)
 		* [Valid](getting_started/valid.md)
 		* [Log](getting_started/log.md)
