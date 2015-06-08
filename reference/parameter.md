@@ -1,6 +1,6 @@
 # Parameter
 
-The parameter in rule can be reference in expression, it support string, int, :
+The parameter in rule can be reference in expression, it support following type:
 
 - `true`
 - `false`
