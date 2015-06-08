@@ -9,7 +9,7 @@ The rule tab's layout is mainly composed of the following parts:
 ![](https://raw.githubusercontent.com/VisualOps/cf-book/master/images/rule_all.png)<br /><br />
 
 #### Rule list
-The resource list is located on the middle of the IDE. It shows all the rules, user can edit each rule after selected.
+The resource list is located on the middle of the IDE. It shows all the rules, user can edit each rule after selected. Our backend scanner will stop when all the rules are in disable state.
 
 ![](https://raw.githubusercontent.com/VisualOps/cf-book/master/images/rule_list.png)
 
