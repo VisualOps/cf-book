@@ -1,10 +1,10 @@
 # Resource attributes
-The attributes we support are the same as [AWS](http://aws.amazon.com/documentation/). As different sdk have different attribute name, we use AWS api return xml as standard attribute.
+The attributes CloudFielder supports are the same as [AWS](http://aws.amazon.com/documentation/). Because different SDKs have different attribute names, CloudFielder uses the XML return values of the AWS API as standard attributes.
 
-####For exmaple: [eip](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAddresses.html)
+#### For exmaple: [eip](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAddresses.html)
 ![](https://raw.githubusercontent.com/VisualOps/cf-book/master/images/resource_attributes_eip.png)
 
-####Different level attribute
+#### Different level attribute
 	
 	acl(assocaitionSet.subnetId = "subnet-12345678")
 
@@ -12,18 +12,18 @@ The attributes we support are the same as [AWS](http://aws.amazon.com/documentat
 
 	acl(assocaitionSet["subnetId"] = "subnet-12345678")
 
-####Multiple attributes
+#### Multiple attributes
 
 	acl(associationSet.subnetId = "subnet-12345678", tagSet["Name"] = "public")
 
-####Multiple attributes at second level
+#### Multiple attributes at second level
 	
-	# find acl that one association that contain subnet-12345678 and acl-12345678
+	# find acl with one association containing subnet-12345678 and acl-12345678
 	acl(associationSet = {"subnetId": "subnet-12345678", "networkAclId":"acl-12345678"})
 	
 	!=
 	
-	# find acl that all associations contain subnet-12345678 and acl-12345678
+	# find acl with all associations containing subnet-12345678 and acl-12345678
 	acl(associationSet.subnetId = "subnet-12345678", associationSet.networkAclId=acl-12345678"})
 
 - ## region

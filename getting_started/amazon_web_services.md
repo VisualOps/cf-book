@@ -1,5 +1,5 @@
 ## Connecting CloudFielder with AWS
-An Amazon Web Services account is necessary in order to get full functionality from VisualOps.
+An Amazon Web Services account is necessary in order to get full functionality from CloudFielder.
 
 ### Using AWS IAM credential
 #### 1 - Make sure IAM access is enabled.

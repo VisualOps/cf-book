@@ -1,6 +1,6 @@
 # Parameter
 
-The parameter in rule can be reference in expression, it support following type:
+The parameter in rule can be referenced in the expression. It supports the following types:
 
 - `true`
 - `false`
@@ -10,7 +10,8 @@ The parameter in rule can be reference in expression, it support following type:
 - `dict`
 - `null`
 
-#### Example
+#### Examples
+
 - param_example = "test"
 - param_example = 123
 - param_example = ["test", 123]

@@ -1,6 +1,6 @@
 # Operator
 
-The operators can be use in expression are as follow:
+The operators can be used in expression are as follow:
 
 - `>`
 - `>=`
@@ -28,12 +28,13 @@ Different operator should be used with corresponding type
 `All` = | != `All`
 
 #### Notice
-If use `attr != ""` or `attr != null`, you can filter the resource has attribute `attr` and have valid value.
 
-- sg(vpcId != ""): sg that belong to vpc
-- sg(vpcId = ""): sg that belong to EC2 classic
+If `attr != ""` or `attr != null` is specified, you will filter the resources having the attribute `attr` and a valid value.
 
-#### Example
+- sg(vpcId != ""): SG belonging to VPC
+- sg(vpcId = ""): SG belonging to EC2 classic
+
+#### Examples
 
 - instance(tags["Name"] = "db")
 - instance(tags["Name"] != "db")

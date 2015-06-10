@@ -1,25 +1,27 @@
 # Rule
 
-The rule tab's layout is mainly composed of the following parts:
+The rule tab's layout is mainly composed by the following parts:
 
 - `Rule list`
 - `Rule editor`
 - `Rule log`
 
-![](https://raw.githubusercontent.com/VisualOps/cf-book/master/images/rule_all.png)<br /><br />
+![](https://raw.githubusercontent.com/VisualOps/cf-book/master/images/rule_all.png)
+<br /><br />
 
 #### Rule list
-The resource list is located on the middle of the IDE. It shows all the rules, user can edit each rule after selected. Our backend scanner will stop when all the rules are in disable state.
+The resource list is located in the middle of the IDE. It shows all the rules, which you can edit after selection. CloudFielder's backend scanner will stop when all the rules are in `disable` state.
 
 ![](https://raw.githubusercontent.com/VisualOps/cf-book/master/images/rule_list.png)
 
+
 #### Rule editor
-The resource editor is located on the right of the IDE. It shows the content of the rule.
+The resource editor is located on the right side of the IDE. It shows the content of the selected rule.
 
 ![](https://raw.githubusercontent.com/VisualOps/cf-book/master/images/rule_editor.png)
 
 
 #### Rule log
-The resource log is located on the right of the IDE after click SCANNED or OPERATED. 
+The resource log is located on the right side of the IDE after clicking on SCANNED or OPERATED. 
 
 ![](https://raw.githubusercontent.com/VisualOps/cf-book/master/images/rule_log.png)

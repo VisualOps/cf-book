@@ -1,5 +1,5 @@
-# Resource relation
-This relation can be used when write rule resource order like vpc.instance or connected function like vpc.connected(resource=["instance"])
+# Resources relation
+This relation can be used when writing the rule resources order, i.e. vpc.instance, or connected functions, i.e. vpc.connected(resource=["instance"]).
 
 - region
 	- vpc
