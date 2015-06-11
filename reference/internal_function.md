@@ -4,8 +4,8 @@
 Some resources have some functions helping you to easily write a rule:
 
 - instance
-	- has_sg_rule - Security Groups related to the instance (without including primary network interface) containing the specified rule
-	- has_not_sg_rule - Security Groups related to the instance (without including primary network interface) not containing the specified rule
+	- has_sg_rule - Security Groups related to the instance (including all network interface) containing the specified rule
+	- has_not_sg_rule - Security Groups related to the instance (including all network interface) not containing the specified rule
 	- has_invalid_ami - Instances using invalid AMI
 - lc
 	- has_invalid_ami - LC using invalid AMI
