@@ -3,7 +3,7 @@
 Here are some rules examples:
 
 - db instance shouldn't have publicIp
-	- instance( tagSet["role"] = "db", publicIpAddress!=null )
+	- instance( tagSet["role"] = "db", ipAddress!=null )
 
 - web instance should be in public subnet
 	- instance( tagSet["Name"] like "^web.*" ).subnet( tagSet["type"] != "public" )
