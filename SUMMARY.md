@@ -10,7 +10,7 @@
 		* [Design](getting_started/design.md)
 		* [Valid](getting_started/valid.md)
 		* [Log](getting_started/log.md)
-* [Reference](getting_started/README.md)
+* [Reference](reference/README.md)
 	* [Resource type](reference/resource_type.md)
 	* [Resource relation](reference/resource_relation.md)
 	* [Resource attributes](reference/resource_attributes.md)
