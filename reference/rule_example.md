@@ -26,3 +26,6 @@ Here are some rules examples:
 - web instance, should close 22 port
 	- instance( tagSet["role"] = "web" ).has_sg_rule(ipPermissions = {"fromPort": 22} )
 	- instance( tagSet["role"] = "web" ).has_sg_rule(ipPermissions.fromPort = 22 )
+
+- each instance should have owner
+	- instance( tagSet["Owner"] = null )
