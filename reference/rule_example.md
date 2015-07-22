@@ -29,3 +29,10 @@ Here are some rules examples:
 
 - each instance should have owner
 	- instance( tagSet["Owner"] = null )
+	- instance( tagSet["Owner"] = "" )
+
+- "Name" of tagSet doesn't present  or tagSet["Name"] is ""
+	- instance( tagSet["Name"] = null )
+
+- "Name" of tagSet  present 
+	- instance( tagSet["Name"] != null )
